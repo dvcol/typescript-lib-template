@@ -4,7 +4,7 @@ description: Install and build the repo
 inputs:
   script:
     description: Build script
-    default: 'build'
+    default: build
 
   node_version:
     description: Pnpm version to use
@@ -12,7 +12,6 @@ inputs:
   pnpm_version:
     description: Node version to use
     required: true
-
 
 runs:
   using: composite

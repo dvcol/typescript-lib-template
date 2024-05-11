@@ -43,7 +43,7 @@ jobs:
           node_version: ${{ env.node_version }}
           pnpm_version: ${{ env.pnpm_version }}
 
-      - name:  🏷️ Release
+      - name: 🏷️ Release
         run: |
           # =================  🏷️ Release =================
 
@@ -65,13 +65,13 @@ jobs:
 
           # push changes
           git push origin --follow-tags
-          
+
           tag_name=$(git describe --abbrev=0 --match 'v*')
           commit_hash=$(git rev-parse HEAD)
-          
+
           echo "Pushing tag: ${tag_name}"
           echo "Pushing commit: ${commit_hash}"
-          
+
           echo "tag_name=${tag_name}" >> "$GITHUB_OUTPUT"
           echo "commit_hash=${commit_hash}" >> "$GITHUB_OUTPUT"
 
