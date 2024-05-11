@@ -38,7 +38,7 @@
   ],
   "scripts": {
     "prepare": "husky install",
-    "build": "tsup lib/index.ts --format cjs,esm --dts --clean",
+    "build": "tsup",
     "watch": "npm run build -- --watch lib",
     "lint": "eslint lib",
     "lint:fix": "eslint lib --fix",
