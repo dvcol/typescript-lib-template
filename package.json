@@ -26,9 +26,10 @@
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
+      "import.types": "./dist/index.d.ts",
+      "require.types": "./dist/index.d.cts",
       "require": "./dist/index.cjs",
-      "import": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "import": "./dist/index.js"
     }
   },
   "files": [
@@ -38,10 +39,11 @@
   ],
   "scripts": {
     "prepare": "husky",
-    "build": "tsup",
+    "build": "tsup && publint",
     "watch": "npm run build -- --watch lib",
     "lint": "eslint lib",
     "lint:fix": "eslint lib --fix",
+    "lint:package": "publint",
     "test:unit": "vitest --run --coverage",
     "test:watch": "vitest",
     "release": "standard-version",
@@ -74,6 +76,7 @@
     "jsonc-eslint-parser": "^2.4.0",
     "lint-staged": "^15.2.10",
     "prettier": "^3.3.3",
+    "publint": "^0.2.10",
     "standard-version": "^9.5.0",
     "tsup": "^8.2.4",
     "typescript": "^5.5.4",
