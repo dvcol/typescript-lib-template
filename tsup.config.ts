@@ -7,4 +7,5 @@ export default defineConfig({
   clean: true,
   splitting: true,
   sourcemap: false,
+  tsconfig: 'tsconfig.lib.json',
 });
