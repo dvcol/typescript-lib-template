@@ -53,14 +53,14 @@
     "access": "public"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.8.0",
-    "@commitlint/config-conventional": "^19.8.0",
+    "@commitlint/cli": "^20.0.0",
+    "@commitlint/config-conventional": "^20.0.0",
     "@dvcol/eslint-config": "^1.6.0",
     "@vitest/coverage-v8": "^3.1.2",
     "eslint": "^9.25.1",
     "extract-changelog-release": "^1.0.2",
     "husky": "^9.1.7",
-    "lint-staged": "^15.5.1",
+    "lint-staged": "^16.0.0",
     "prettier": "^3.5.3",
     "publint": "^0.3.12",
     "standard-version": "^9.5.0",
